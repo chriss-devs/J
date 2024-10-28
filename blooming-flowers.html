@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="blomming-flowers.css" />
+    <link rel="stylesheet" href="shooting start.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+
+    <title> </title>
+    <style>
+      body, html {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+      }
+
+      /* El iframe ocupará toda la pantalla */
+      #background-animation {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1; /* Coloca el iframe detrás del contenido */
+          border: none;
+      }
+
+      .content {
+          position: relative;
+          z-index: 1; /* Asegura que el contenido esté encima de la animación */
+          color: white;
+          text-align: center;
+          margin-top: 50px;
+      }
+  </style>
+  </head>
+
+  <body>
+    <iframe id="background-animation" src="shooting-start.html"></iframe>
+    <main>
+      <div class="corolla">
+        <div class="segmL"></div>
+        <div class="segmR"></div>
+        <div class="segmR"></div>
+        <div class="segmR"></div>
+        <div class="segmR"></div>
+        <div class="segmL"></div>
+        <div class="segmL"></div>
+      </div>
+      <div class="rings">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+      </div>
+    </main>
+
+    <script src="blomming-flowers.js"></script>
+  </body>
+  
+</html>

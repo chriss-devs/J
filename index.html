@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <style>
+        
+        .text {
+          margin-top: 125px;
+        }
+        
+        .j {
+          position: absolute;
+          margin-top: -125px;
+        }
+
+        .glow {
+  margin-top: -175px;
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #00ffcc, 0 0 30px #66ffff, 0 0 40px #33cccc, 0 0 50px #009999, 0 0 60px #007f7f, 0 0 70px #00b3b3;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #00ffcc, 0 0 40px #66ffff, 0 0 50px #33cccc, 0 0 60px #009999, 0 0 70px #007f7f, 0 0 80px #00b3b3;
+  }
+}
+
+
+        @font-face {
+            font-family: 'Future';
+            src: url('Future.woff2') format('woff2'),
+                 url('Future.woff') format('woff'),
+                 url('Future.otf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Future', sans-serif;
+        }
+        span {
+            font-size: 0.65em;
+        }
+        
+
+    </style>
+    <title> </title>
+</head>
+<body>
+  <div class="container-button">
+    <div class="hover bt-1" onclick="redirectWithDelay('blooming-flowers.html', 1000)"></div>
+    <div class="hover bt-2" onclick="redirectWithDelay('blooming-flowers.html', 1000)"></div>
+    <div class="hover bt-3" onclick="redirectWithDelay('blooming-flowers.html', 1000)"></div>
+    <div class="hover bt-4" onclick="redirectWithDelay('blooming-flowers.html', 1000)"></div>
+    <div class="hover bt-5" onclick="redirectWithDelay('blooming-flowers.html', 1000)"></div>
+    <div class="hover bt-6" onclick="redirectWithDelay('blooming-flowers.html', 1000)"></div>
+    <button onclick="redirectWithDelay('blooming-flowers.html', 1000)"></button>
+  </div>
+  
+    <div class="glow">
+        <span>FELIZ CUMPLEAÑOS</span>
+    </div>
+    <script>
+      function redirectWithDelay(url, delay) {
+        // Add a delay before navigating to the URL
+        setTimeout(() => {
+          window.location.href = url;
+        }, delay);
+      }
+    </script>
+    
+<div class="j">
+  <j>click arriba</j>
+</div>
+
+    <div class="text">
+      <p>Gracias por todos los momentos especiales y risas de estos últimos años. Aunque a veces me cabreas, siempre serás una persona especial para mí. 🫶</p>
+      <p>Es el primer detalle que hago 'con mis propias manos' y doy, así que perdón si no es lo mejor del mundo. 👅</p>
+    </div>
+  
+</body>
+</html>
